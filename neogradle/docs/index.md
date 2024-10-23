@@ -2,42 +2,42 @@
 sidebar_position: 0
 ---
 
-# NeoGradle Documentation
+# NeoGradle 文档
 
-This is the official documentation for [NeoGradle], a [Gradle] plugin for developing [NeoForge] and mods using NeoForge.
+这里是[NeoGradle]官方文档, 一个[Gradle]插件用于开发 [NeoForge] 和模组
 
-This documentation is _only_ for NeoForge, **this is not a Java, Groovy/Kotlin, or Gradle tutorial**.
+本文档只适用于NeoForge, **这不是一个Java,Groovy/Kotlin教程**.
 
-If you would like to contribute to the docs, read [Contributing to the Docs][contributing].
+如果想对本文档做出贡献,请阅读 [为Docs做贡献][contributing].
 
-## Adding the Plugin
+## 添加插件
 
-NeoGradle can be added using the `plugins` block in `build.gradle` by adding the NeoForged maven to the available plugin repositories in `settings.gradle`:
+NeoGradle 可以通过在 `settings.gradle` 中添加NeoForge的maven仓库添加进repositories中,在 `build.gradle` 中使用 `plugins` 块:
 
 ```gradle
-// In settings.gradle
+// 在 settings.gradle 中
 pluginManagement {
     repositories {
         // ...
 
-        // Add the NeoForged maven
+        // 添加 NeoForge maven仓库
         maven { url = 'https://maven.neoforged.net/releases' }
     }
 }
 ```
 
 ```gradle
-// In build.gradle
+// 在 build.gradle 中
 plugins {
-    // Add the NeoGradle userdev plugin
+    // 添加 NeoGradle userdev p插件
     id 'net.neoforged.gradle.userdev' version '7.0.120'
 
     // ...
 }
 ```
 
-:::note
-While you can use version ranges for the NeoGradle plugin, it is not recommended to do so, as that may lead to more frequent decompilation and recompilation rounds and possible behavioral changes. You can find the latest NeoGradle version on our [Project Listing][gradlelisting].
+:::注意
+虽然你可以使用NeoGradle插件的版本范围,但是不建议这样做,因为这样可能会导致更频繁的反编译和重新编译以及可能的行为更改,你可以在我们的 [项目列表][gradlelisting]查看.
 :::
 
 ## Adding the NeoForge dependency
