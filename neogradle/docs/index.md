@@ -37,12 +37,12 @@ plugins {
 ```
 
 :::注意
-虽然你可以使用NeoGradle插件的版本范围,但是不建议这样做,因为这样可能会导致更频繁的反编译和重新编译以及可能的行为更改,你可以在我们的 [项目列表][gradlelisting]查看.
+虽然你可以使用NeoGradle插件的版本范围,但是不建议这样做,因为这样可能会导致更频繁的反编译和重新编译以及可能的行为更改,你可以在我们的 [列表][gradlelisting]查看.
 :::
 
-## Adding the NeoForge dependency
+## 添加 NeoForge 依赖
 
-In order to get the decompiled Minecraft environment and the NeoForge classes in your development environment, you just need to add the `net.neoforged:neoforge` dependency to a configuration for both a runtime and compile-time dependencies (usually `implementation`):
+为了在你的开发环境中获取反编译的Minecraft环境和NeoForge类,你只需要将 `net.neoforged:neoforge` 依赖项添加到运行时和编译时依赖项配置中(它通常是 `implementation`):
 
 ```gradle
 dependencies {
@@ -51,8 +51,8 @@ dependencies {
 }
 ```
 
-:::note
-[NeoForge's MDK][mdk] sets the NeoForge version via [gradle.properties][properties]. You can find the latest NeoForge version on our [Project Listing][neolisting].
+:::注意
+[NeoForge's MDK][mdk] 通过[gradle.properties][properties]设置NeoForge版本. 您可以在我们的网站找到最新的NeoForge版本[列表][neolisting].
 :::
 
 [NeoGradle]: https://github.com/neoforged/NeoGradle
